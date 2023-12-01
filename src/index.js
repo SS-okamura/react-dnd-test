@@ -4,14 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Knight from "./Components/Knight";
-import Square from "./Components/Square";
+import Board from "./Components/Board";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Square black>
-      <Knight />
-    </Square>
+    <Board knightPosition={[0, 0]} />,
   </React.StrictMode>
 );
 

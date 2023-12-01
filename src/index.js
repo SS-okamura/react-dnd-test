@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Knight from "./Components/Knight";
+import Square from "./Components/Square";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Knight />
+    <Square black>
+      <Knight />
+    </Square>
   </React.StrictMode>
 );
 
